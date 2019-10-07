@@ -1,0 +1,33 @@
+.background {
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(30deg, #914145 0%, #A53929 50%, #B34B42 100%);
+    font-family: 'Noto Serif TC', serif;
+}
+
+.content {
+    color: #343434;
+}
+
+.box-shadow {
+    box-shadow: 8px 10px 1px rgba(52, 52, 52, 0.6);
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(8px 10px 1px rgba(52, 52, 52, 0.6));
+    filter: drop-shadow(8px 10px 1px rgba(52, 52, 52, 0.6))
+}
+
+em {
+    color: #A53929;
+}
+
+#search_bar {
+    border-bottom: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    color: ivory;
+    font-size: 24px;
+}

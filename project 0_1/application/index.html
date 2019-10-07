@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>Project_0.1 斷句統計</title>
+    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap">
+    </head>
+
+    <body class="background">
+        <div class="text-center" style="padding-top: 20%">
+            <input id="search_bar" class="drop-shadow" type="text" placeholder="關鍵字" aria-label="Search" autocomplete="off" onkeypress="on_key_press">
+        </div>
+
+        <div class="content card box-shadow p-3 m-5 rounded border-0" style="background-color: ivory;">
+            <div class="card-body"> 
+                <table id="table" class="table table-hover table-bordered" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th class="text-center" style="min-width: 10%">次數</th>
+                            <th class="text-center" style="min-width: 90%">內容</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                        <!-- 存放 table 中資料格 -->
+                    </tbody>
+                </table>
+            </div>
+
+            <nav aria-label="Page Navigation">
+                <ul class="pagination justify-content-center">
+                    <li id="prev" class="page-item" style="visibility: hidden">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+
+                    <li id="page_number" class="page-item page-link">1</li>
+
+                    <li id="next" class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
